@@ -24,7 +24,14 @@
             <a-sphere position="0 0 1" radius="0.5" color="#EF2D5E"></a-sphere>
             <a-cylinder position="0 0 -1" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
             
-             <a-entity 
+            
+            
+        </a-marker>
+        <a-entity camera></a-entity>
+        </a-scene>
+        
+        <a-marker type="pattern" url="data/kanji.patt">
+        <a-entity 
             position="0 0 0" 
             particle-system="
                 texture: images/particles/star.png;
@@ -38,13 +45,8 @@
                 blending: 1;
                 particleCount: 200;
                 maxAge: 5; ">
-            </a-entity>
-            
-        </a-marker>
-        <a-entity camera></a-entity>
-        </a-scene>
-        
-        
+        </a-entity>
+         </a-marker>
         
       
         
