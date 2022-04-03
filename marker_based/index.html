@@ -7,7 +7,7 @@
     
     <!-- particles system component -->
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+   
  
     <!-- speech command component -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
@@ -25,12 +25,12 @@
             <a-sphere position="0 0 1" radius="0.5" color="#EF2D5E"></a-sphere>
             <a-cylinder position="0 0 -1" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
             
+            <a-entity position="0 2.25 -15" particle-system="preset: snow"></a-entity>
             
             
         </a-marker>
             
-            <a-entity id="rain" particle-system="preset: rain; color: #24CAFF; particleCount: 5000"></a-entity>
-            <a-entity particle-system="preset: snow" position="0 0 -10"></a-entity>
+   
             
         <a-entity camera></a-entity>
         </a-scene>
