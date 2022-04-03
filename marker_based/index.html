@@ -22,15 +22,12 @@
     vr-mode-ui="enabled: false;"
     renderer="logarithmicDepthBuffer: true;"
     embedded
-    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
   >
-        
-             <a-box color="red" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
-             
-             
+                     
         <a-marker preset="hiro">
-            <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
-                        
+            <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 -1" material="color: #4CC3D9"></a-entity>
+           
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
