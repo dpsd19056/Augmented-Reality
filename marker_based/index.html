@@ -20,7 +20,9 @@
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
         <a-marker preset="hiro">
-            <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 1.0" position="0 0 0" material="color: #4CC3D9"></a-entity>
+            <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 2.0" position="0 0 0" material="color: #4CC3D9"></a-entity>
+            <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+            <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
         </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
