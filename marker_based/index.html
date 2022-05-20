@@ -11,89 +11,18 @@
     <!-- speech command component -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.5.0/annyang.min.js"></script>
     <script src="build/aframe-speech-command-component.js"></script> 
-     
     
+
     <body style="margin : 0px; overflow: hidden;">
         <a-scene
-                 
-        vr-mode-ui="enabled: false;"
-        renderer="logarithmicDepthBuffer: true;"
-        embedded
-        arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
-        >
-            
-            <a-assets>
-            <img id="my-image" src="assets/pattern-pattern19056.png">
-            <a-asset-item id="HydrogenModel" src="assets/HydrogenModel.glb"></a-asset-item>
-            <a-asset-item id="OxygenModel" src="assets/OxygenModel.glb"></a-asset-item>
-            <a-asset-item id="WaterModel" src="assets/WaterModel.glb"></a-asset-item>
-        </a-assets>
-            
-       <!-- This part is not needed for the 2nd deliverable
- 
-        <a-marker preset="hiro">           
-            
-              <a-entity id="box"
-                
-                          geometry="primitive: box; width: 0.7; depth: 0.7; height: 0.7;"
-                          rotation="0 45 0"
-                          position="0 0 0"
-                          material="color: #3291a8">
-                    
-                </a-entity>
-
-                <a-entity id="sphere"
-                          geometry="primitive: sphere; radius:0.5;"
-                          <!--It doesn't matter if I rotate the object, because it would be the same result at any angle-->
-               <!--           position="0 1 0"
-                          material="color: #a8323c">
-                </a-entity>
-
-                <a-cylinder position="0 0.5 0"
-                            radius="0.5"
-                            <!--It doesn't matter if I rotate the object, because it would be the same result at any angle-->
-                <!--            height="2.5"
-                            color="#32a842">
-                </a-cylinder>
--->
-        
-        
-                <a-entity id="annyang" annyang-speech-recognition></a-entity>
-
-        
-                <a-entity position="0 2.25 -15" particle-system="preset: snow; particleCount: 10000000"
-                          visible="false"
-                          speech-command__start="command: start; type: attribute; attribute: visible; value: true;"
-                          speech-command__stop="command: stop; type: attribute; attribute: visible; value: false;">
-                </a-entity>
-
-
-            </a-marker>
-    
-    <a-marker preset='custom' type='pattern' url='assets/pattern-dpsd19056.patt'>
-
-            <a-obj-model src="#text-obj" mtl="#text-mtl"></a-obj-model>
-
-            <a-image src="#my-image" width="1" height="1" rotation="90 180 0" position="0 0 0"></a-image>
-     
+    vr-mode-ui="enabled: false;"
+    renderer="logarithmicDepthBuffer: true;"
+    embedded
+    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+  >
+        <a-marker preset="hiro">
+            <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
         </a-marker>
-    
-    <a-marker type='pattern' id="HydrogenMarker" url='assets/pattern-H.patt'>
-
-            <a-entity gltf-model="#HydrogenModel"
-                animation__rotate="property: rotation; dur: 5000; easing: linear; dir: normal; from:180 0 0; to: 180 360 0; loop: true;">
-            </a-entity>
-            
-        </a-marker>
-
-        <a-marker type='pattern' id="OxygenModel" url='assets/pattern-O.patt'>
-
-            <a-entity gltf-model="#OxygenModel"
-                animation__rotate="property: rotation; dur: 5000; easing: linear; dir: normal; from:180 0 0; to: 180 360 0; loop: true;">
-            </a-entity>
-
-        </a-marker>    
-    
         <a-entity camera></a-entity>
         </a-scene>
     </body>
